@@ -14,7 +14,7 @@ export function Home(){
         <View style={styles.form}>
           <TextInput 
             style={styles.input} 
-            placeholder='Nome do participante'
+            placeholder='Adicione uma nova tarefa'
             placeholderTextColor='#F2F2F2'
             keyboardType='default'
             />
@@ -47,15 +47,27 @@ export function Home(){
           </View>
         </View>
 
-        <View style={styles.containerEmpty}>
+        {/* <View style={styles.containerEmpty}>
           <Image 
             source={require('../../images/Clipboard.png')}
             style={styles.logoEmpty}
           />
-          <Text style={styles.emptyTextTasks}>
-            <Text>Você ainda não tem tarefas cadastradas</Text>
-            Crie tarefas e organize seus itens a fazer.
+          <View >
+            <Text style={styles.emptyTextTasks1}>Você ainda não tem tarefas cadastradas</Text>
+            <Text style={styles.emptyTextTasks}>Crie tarefas e organize seus itens a fazer.</Text>
+          </View>
+        </View> */}
+
+        <View style={styles.task}>
+          <Image
+            source={require('../../images/circle.png')}
+          />
+          <Text style={styles.taskText}>
+          Integer urna interdum massa libero auctor neque turpis turpis semper.
           </Text>
+          <Image
+            source={require('../../images/trash.png')}
+          />
         </View>
         </View>
         
